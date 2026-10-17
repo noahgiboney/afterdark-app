@@ -206,8 +206,8 @@ export default function TermsPage() {
                 details may be inaccurate or out of date.
               </p>
               <p>
-                Echos are retellings of a location&apos;s story, written by Apple&apos;s on-device
-                AI in styles such as a campfire tale, a lost journal or a case file. Echos are
+                Echoes are retellings of a location&apos;s story, written by Apple&apos;s on-device
+                AI in styles such as a campfire tale, a lost journal or a case file. Echoes are
                 fiction. They may include invented or inaccurate details and should not be taken as
                 fact.
               </p>

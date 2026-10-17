@@ -9,31 +9,31 @@ const features = [
     eyebrow: "Map",
     title: "Every haunt, on one map.",
     detail: "Browse haunted places around the world, from abandoned asylums to the house down the street.",
-    screenshot: "map.png",
+    screenshot: "map.jpg",
   },
   {
-    eyebrow: "Near You",
-    title: "What's haunting your neighborhood?",
-    detail: "See the closest haunts, what's trending tonight, and the newest places added.",
-    screenshot: "near-you.png",
+    eyebrow: "Stories",
+    title: "Every haunt has a story.",
+    detail: "Read the legend behind each location, then hear it retold with Echoes as a campfire tale, a lost journal, or a case file.",
+    screenshot: "story.jpg",
   },
   {
-    eyebrow: "Echos",
-    title: "Hear the story your way.",
-    detail: "Retell any location's legend as a campfire tale, a lost journal, or a case file.",
-    screenshot: "echos.png",
+    eyebrow: "Haunted Notifications",
+    title: "Know when you're close.",
+    detail: "Get a heads-up when you're near a haunted location, so you never drive past one again.",
+    screenshot: "notifications.jpg",
   },
   {
     eyebrow: "Road Trips",
     title: "Chart a course through restless places.",
     detail: "Pick your stops and get directions to every haunt along the way.",
-    screenshot: "road-trips.png",
+    screenshot: "road-trips.jpg",
   },
   {
     eyebrow: "Community",
     title: "Go there. Leave your mark.",
-    detail: "Log your visits, share what you saw, and climb the leaderboard with fellow explorers.",
-    screenshot: "community.png",
+    detail: "Log your visits, add new locations, and climb the leaderboard with fellow explorers.",
+    screenshot: "social.jpg",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
 
           <div className="mx-auto mt-16 w-64 sm:w-72">
-            <PhoneFrame screenshot="hero.png" label="Home" />
+            <PhoneFrame screenshot="hero.jpg" label="Explore" />
           </div>
         </section>
 
