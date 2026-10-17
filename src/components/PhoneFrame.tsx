@@ -22,7 +22,7 @@ export default function PhoneFrame({ screenshot, label, className = "" }: Props)
         <Image src={`/screenshots/${screenshot}`} alt={label} fill sizes="300px" className="object-cover" />
       ) : (
         <div className="flex h-full flex-col items-center justify-center gap-2 bg-gradient-to-b from-[#1c1c1e] to-[#0b0b0c] p-6 text-center">
-          <span className="text-sm font-medium text-foreground/70">{label}</span>
+          <span className="text-sm text-foreground/70">{label}</span>
           <span className="text-xs text-secondary">Screenshot coming soon</span>
         </div>
       )}

@@ -1,10 +1,16 @@
-import Image from "next/image";
 import AppStoreButton from "@/components/AppStoreButton";
 import Footer from "@/components/Footer";
+import GlowingGhost from "@/components/GlowingGhost";
 import PhoneFrame from "@/components/PhoneFrame";
-import { APP_NAME, APP_TAGLINE } from "@/lib/app";
+import { APP_NAME } from "@/lib/app";
 
 const features = [
+  {
+    eyebrow: "Explore",
+    title: "What's haunting your neighborhood?",
+    detail: "See the closest haunts, what's trending, and the newest places added by the community.",
+    screenshot: "explore.jpg",
+  },
   {
     eyebrow: "Map",
     title: "Every haunt, on one map.",
@@ -42,26 +48,22 @@ export default function Home() {
     <div className="flex min-h-screen flex-col overflow-x-hidden">
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative px-6 pt-24 pb-20 text-center">
-          <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[600px] bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
-          <Image
-            src="/dark.png"
-            alt={`${APP_NAME} app icon`}
-            width={112}
-            height={112}
-            priority
-            className="mx-auto drop-shadow-[0_8px_30px_rgba(255,255,255,0.08)]"
-          />
-          <h1 className="mt-8 text-5xl font-bold tracking-tight sm:text-6xl">{APP_NAME}</h1>
-          <p className="mt-2 text-lg font-medium text-secondary">Haunted Locations</p>
-          <p className="mx-auto mt-6 max-w-sm text-lg text-foreground/80">{APP_TAGLINE}</p>
-          <div className="mt-8">
-            <AppStoreButton />
+        <section className="mx-auto flex min-h-[85vh] max-w-6xl flex-col-reverse items-center justify-center gap-10 px-6 py-20 md:flex-row md:gap-16">
+          <div className="max-w-xl text-center md:flex-1 md:text-left">
+            <h1 className="text-7xl leading-none text-white sm:text-8xl lg:text-9xl">{APP_NAME}</h1>
+            <p className="mt-6 text-3xl leading-tight sm:text-4xl lg:text-5xl">
+              Every place has a story after dark.
+            </p>
+            <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-foreground/75 md:mx-0">
+              Find haunted locations near you, hear the legends behind them, and plan a road trip
+              through the restless places.
+            </p>
+            <div className="mt-10">
+              <AppStoreButton />
+            </div>
           </div>
 
-          <div className="mx-auto mt-16 w-64 sm:w-72">
-            <PhoneFrame screenshot="hero.jpg" label="Explore" />
-          </div>
+          <GlowingGhost className="w-56 shrink-0 sm:w-72 md:w-[380px]" />
         </section>
 
         {/* Features */}
@@ -72,8 +74,8 @@ export default function Home() {
               className={`flex flex-col items-center gap-12 md:gap-20 ${i % 2 ? "md:flex-row-reverse" : "md:flex-row"}`}
             >
               <div className="max-w-md text-center md:flex-1 md:text-left">
-                <p className="text-sm font-semibold tracking-wide text-secondary uppercase">{f.eyebrow}</p>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">{f.title}</h2>
+                <p className="text-sm tracking-wide text-secondary uppercase">{f.eyebrow}</p>
+                <h2 className="mt-3 text-3xl sm:text-4xl">{f.title}</h2>
                 <p className="mt-4 text-lg leading-relaxed text-foreground/70">{f.detail}</p>
               </div>
               <div className="w-60 shrink-0 sm:w-64">
@@ -85,7 +87,7 @@ export default function Home() {
 
         {/* Closing CTA */}
         <section className="px-6 py-28 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Go find your first haunt.</h2>
+          <h2 className="text-3xl sm:text-4xl">Go find your first haunt.</h2>
           <p className="mt-3 text-lg text-secondary">Free on the App Store.</p>
           <div className="mt-8">
             <AppStoreButton />

@@ -121,10 +121,10 @@ export default async function LocationPage({ params }: Props) {
       <div className="flex min-h-screen flex-col">
         <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center px-6 pt-20 pb-12 text-center">
           <Image src="/dark.png" alt={`${APP_NAME} app icon`} width={72} height={72} priority />
-          <p className="mt-3 text-sm font-medium text-secondary">{APP_NAME}</p>
+          <p className="mt-3 text-sm text-secondary">{APP_NAME}</p>
 
           <div className="mt-10 w-full rounded-2xl bg-card p-5 text-left">
-            <h1 className="text-2xl font-bold tracking-tight">{location.name}</h1>
+            <h1 className="text-2xl">{location.name}</h1>
             <p className="mt-2 text-[15px] leading-relaxed text-foreground/80">{descPreview}</p>
           </div>
 

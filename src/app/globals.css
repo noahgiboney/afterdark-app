@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
+/* Palette from the App Store marketing header: charcoal background, warm cream text. */
 :root {
-  --background: #000000;
-  --foreground: #f5f5f7;
-  --secondary: #8e8e93;
-  --card: #1c1c1e;
-  --separator: #38383a;
+  --background: #222222;
+  --foreground: #f2ede4;
+  --secondary: #a39d93;
+  --card: #2c2b2a;
+  --separator: #3d3b39;
   color-scheme: dark;
 }
 
@@ -15,13 +16,28 @@
   --color-secondary: var(--secondary);
   --color-card: var(--card);
   --color-separator: var(--separator);
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", var(--font-geist-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-kurale), Georgia, serif;
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  /* Set here rather than through --font-sans: next/font defines --font-kurale on <body>, below :root. */
+  font-family: var(--font-kurale), Georgia, serif;
   -webkit-font-smoothing: antialiased;
+}
+
+/* A slow drift for the hero ghost. */
+@keyframes ghost-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.ghost-float {
+  animation: ghost-float 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ghost-float { animation: none; }
 }

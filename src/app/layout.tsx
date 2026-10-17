@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Kurale } from "next/font/google";
 import "./globals.css";
 import { APP_FULL_NAME, APP_TAGLINE } from "@/lib/app";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const kurale = Kurale({
+  variable: "--font-kurale",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${kurale.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

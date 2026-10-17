@@ -13,7 +13,7 @@ const CONTACT_EMAIL = "afterdark@nmgsystems.dev";
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="text-xl font-semibold text-foreground">{title}</h2>
+      <h2 className="text-xl text-foreground">{title}</h2>
       <div className="mt-3 space-y-3">{children}</div>
     </section>
   );
@@ -38,7 +38,7 @@ export default function TermsPage() {
             &larr; Back home
           </Link>
 
-          <h1 className="mt-6 text-3xl font-bold">Terms of Use</h1>
+          <h1 className="mt-6 text-3xl">Terms of Use</h1>
           <p className="mt-2 text-sm text-secondary">Last updated: October 17, 2026</p>
 
           <div className="mt-10 space-y-10 leading-relaxed text-foreground/80">
@@ -60,7 +60,7 @@ export default function TermsPage() {
             </section>
 
             <div className="rounded-2xl bg-card p-5">
-              <h2 className="text-lg font-semibold text-foreground">
+              <h2 className="text-lg text-foreground">
                 Zero tolerance for objectionable content and abusive users
               </h2>
               <p className="mt-2">
