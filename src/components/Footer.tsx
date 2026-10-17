@@ -13,7 +13,7 @@ export default function Footer() {
         Terms
       </Link>
       <span aria-hidden>·</span>
-      <a href="mailto:noah@nmgsystems.dev" className="transition-colors hover:text-foreground">
+      <a href="mailto:afterdark@nmgsystems.dev" className="transition-colors hover:text-foreground">
         Contact
       </a>
     </footer>

@@ -447,8 +447,8 @@ export default function PrivacyPage() {
             <ul className="mt-2 list-disc space-y-1 pl-6">
               <li>
                 By email:{" "}
-                <a href="mailto:noah@nmgsystems.dev" className="underline hover:text-foreground">
-                  noah@nmgsystems.dev
+                <a href="mailto:afterdark@nmgsystems.dev" className="underline hover:text-foreground">
+                  afterdark@nmgsystems.dev
                 </a>
               </li>
             </ul>

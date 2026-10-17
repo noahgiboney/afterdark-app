@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: `Terms of Use for ${APP_FULL_NAME}`,
 };
 
-const CONTACT_EMAIL = "noah@nmgsystems.dev";
+const CONTACT_EMAIL = "afterdark@nmgsystems.dev";
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
