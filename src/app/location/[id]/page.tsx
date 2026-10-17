@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import { supabase } from "@/lib/supabase"; 
+import { supabase } from "@/lib/supabase";
+import AppStoreButton from "@/components/AppStoreButton";
+import Footer from "@/components/Footer";
+import { APP_FULL_NAME, APP_NAME } from "@/lib/app";
 
 type LocationPreview = {
   id: string;
@@ -65,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       openGraph: {
         title,
         description,
-        siteName: 'Cryptid Coordinates', 
+        siteName: APP_FULL_NAME,
         url: `${siteUrl}/location/${id}`,
         type: 'website',
         images: [
@@ -107,51 +110,42 @@ export default async function LocationPage({ params }: Props) {
       .single();
 
     if (error || !location) {
-      return (
-        <main className="flex min-h-screen flex-col items-center justify-center gap-8">
-          <p>Location not found</p>
-        </main>
-      );
+      return <Message text="Location not found" />;
     }
 
-    const descPreview = location.detail.length > 100 
-      ? `${location.detail.slice(0, 100)}...` 
+    const descPreview = location.detail.length > 160
+      ? `${location.detail.slice(0, 160).trimEnd()}…`
       : location.detail;
 
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center gap-8 p-4 text-center">
-        <Image
-        className="rounded-lg shadow-lg"
-        src="/dark.png"
-        alt="App Logo"
-        width={300}
-        height={300}
-        priority
-      />
-        <h1 className="text-2xl font-bold">{location.name}</h1>
-        <p className="text-lg max-w-md">{descPreview}</p>
-        <p className="text-gray-400">View more on the app</p>
-        <a
-          href="https://apps.apple.com/us/app/cryptid-coordinates/id6478195420"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            className="hover:opacity-90 transition-opacity"
-            src="/app_store.svg"
-            alt="Download on the App Store"
-            width={160}
-            height={50}
-          />
-        </a>
-      </main>
+      <div className="flex min-h-screen flex-col">
+        <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center px-6 pt-20 pb-12 text-center">
+          <Image src="/dark.png" alt={`${APP_NAME} app icon`} width={72} height={72} priority />
+          <p className="mt-3 text-sm font-medium text-secondary">{APP_NAME}</p>
+
+          <div className="mt-10 w-full rounded-2xl bg-card p-5 text-left">
+            <h1 className="text-2xl font-bold tracking-tight">{location.name}</h1>
+            <p className="mt-2 text-[15px] leading-relaxed text-foreground/80">{descPreview}</p>
+          </div>
+
+          <p className="mt-8 text-sm text-secondary">See the full story in the app</p>
+          <div className="mt-4">
+            <AppStoreButton />
+          </div>
+        </main>
+
+        <Footer />
+      </div>
     );
   } catch (e) {
     console.error('LocationPage: Unexpected error:', e);
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-center gap-8">
-        <p>Error loading location</p>
-      </main>
-    );
+    return <Message text="Error loading location" />;
   }
+}
+function Message({ text }: { text: string }) {
+  return (
+    <main className="flex min-h-screen items-center justify-center text-secondary">
+      <p>{text}</p>
+    </main>
+  );
 }

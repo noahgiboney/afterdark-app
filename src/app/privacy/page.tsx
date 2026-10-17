@@ -1,23 +1,25 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for Cryptid Coordinates",
+  description: "Privacy Policy for Afterdark: Haunted Locations",
 };
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen px-6 py-16 text-white">
+    <>
+    <main className="min-h-screen px-6 py-16 text-foreground">
       <div className="mx-auto max-w-3xl">
-        <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
+        <Link href="/" className="text-sm text-secondary hover:text-foreground transition-colors">
           &larr; Back home
         </Link>
 
-        <h1 className="mt-6 text-3xl font-bold">Privacy Policy for Cryptid Coordinates</h1>
-        <p className="mt-2 text-sm text-gray-400">Last updated: September 14, 2026</p>
+        <h1 className="mt-6 text-3xl font-bold">Privacy Policy for Afterdark: Haunted Locations</h1>
+        <p className="mt-2 text-sm text-secondary">Last updated: October 16, 2026</p>
 
-        <div className="mt-10 space-y-8 text-gray-200 leading-relaxed">
+        <div className="mt-10 space-y-8 text-foreground/80 leading-relaxed">
           <section>
             <p>
               This Privacy Policy describes Our policies and procedures on the collection, use and
@@ -32,7 +34,7 @@ export default function PrivacyPage() {
                 href="https://www.termsfeed.com/privacy-policy-generator/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-white"
+                className="underline hover:text-foreground"
               >
                 Privacy Policy Generator
               </a>
@@ -41,16 +43,16 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Interpretation and Definitions</h2>
+            <h2 className="text-xl font-semibold text-foreground">Interpretation and Definitions</h2>
 
-            <h3 className="mt-4 text-lg font-semibold text-white">Interpretation</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">Interpretation</h3>
             <p className="mt-2">
               The words of which the initial letter is capitalized have meanings defined under the
               following conditions. The following definitions shall have the same meaning
               regardless of whether they appear in singular or in plural.
             </p>
 
-            <h3 className="mt-4 text-lg font-semibold text-white">Definitions</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">Definitions</h3>
             <p className="mt-2">For the purposes of this Privacy Policy:</p>
             <ul className="mt-2 list-disc space-y-2 pl-6">
               <li>
@@ -64,13 +66,13 @@ export default function PrivacyPage() {
                 election of directors or other managing authority.
               </li>
               <li>
-                <strong>Application</strong> refers to Cryptid Coordinates, the software program
+                <strong>Application</strong> refers to Afterdark: Haunted Locations, the software program
                 provided by the Company.
               </li>
               <li>
                 <strong>Company</strong> (referred to as either &quot;the Company&quot;,
                 &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to
-                Cryptid Coordinates.
+                Afterdark.
               </li>
               <li>
                 <strong>Country</strong> refers to: California, United States
@@ -107,13 +109,13 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">
+            <h2 className="text-xl font-semibold text-foreground">
               Collecting and Using Your Personal Data
             </h2>
 
-            <h3 className="mt-4 text-lg font-semibold text-white">Types of Data Collected</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">Types of Data Collected</h3>
 
-            <h4 className="mt-3 font-semibold text-white">Personal Data</h4>
+            <h4 className="mt-3 font-semibold text-foreground">Personal Data</h4>
             <p className="mt-2">
               While using Our Service, We may ask You to provide Us with certain personally
               identifiable information that can be used to contact or identify You. Personally
@@ -123,7 +125,7 @@ export default function PrivacyPage() {
               <li>Usage Data</li>
             </ul>
 
-            <h4 className="mt-4 font-semibold text-white">Usage Data</h4>
+            <h4 className="mt-4 font-semibold text-foreground">Usage Data</h4>
             <p className="mt-2">Usage Data is collected automatically when using the Service.</p>
             <p className="mt-2">
               Usage Data may include information such as Your Device&apos;s Internet Protocol
@@ -143,7 +145,7 @@ export default function PrivacyPage() {
               Service or when You access the Service by or through a mobile device.
             </p>
 
-            <h4 className="mt-4 font-semibold text-white">
+            <h4 className="mt-4 font-semibold text-foreground">
               Information Collected while Using the Application
             </h4>
             <p className="mt-2">
@@ -165,7 +167,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">In-App Purchases</h2>
+            <h2 className="text-xl font-semibold text-foreground">In-App Purchases</h2>
             <p className="mt-2">
               The Application offers in-app purchases. All purchases are processed entirely by
               Apple Inc. through the App Store and are billed to Your Apple ID account. We do not
@@ -176,7 +178,7 @@ export default function PrivacyPage() {
                 href="https://www.apple.com/legal/privacy/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-white"
+                className="underline hover:text-foreground"
               >
                 apple.com/legal/privacy
               </a>
@@ -185,7 +187,7 @@ export default function PrivacyPage() {
                 href="https://www.apple.com/legal/internet-services/itunes/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-white"
+                className="underline hover:text-foreground"
               >
                 apple.com/legal/internet-services/itunes
               </a>
@@ -202,7 +204,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Use of Your Personal Data</h2>
+            <h2 className="text-xl font-semibold text-foreground">Use of Your Personal Data</h2>
             <p className="mt-2">The Company may use Personal Data for the following purposes:</p>
             <ul className="mt-2 list-disc space-y-2 pl-6">
               <li>
@@ -288,7 +290,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Retention of Your Personal Data</h2>
+            <h2 className="text-xl font-semibold text-foreground">Retention of Your Personal Data</h2>
             <p className="mt-2">
               The Company will retain Your Personal Data only for as long as is necessary for the
               purposes set out in this Privacy Policy. We will retain and use Your Personal Data to
@@ -305,7 +307,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Transfer of Your Personal Data</h2>
+            <h2 className="text-xl font-semibold text-foreground">Transfer of Your Personal Data</h2>
             <p className="mt-2">
               Your information, including Personal Data, is processed at the Company&apos;s
               operating offices and in any other places where the parties involved in the
@@ -328,7 +330,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Delete Your Personal Data</h2>
+            <h2 className="text-xl font-semibold text-foreground">Delete Your Personal Data</h2>
             <p className="mt-2">
               You have the right to delete or request that We assist in deleting the Personal Data
               that We have collected about You.
@@ -350,23 +352,23 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Disclosure of Your Personal Data</h2>
+            <h2 className="text-xl font-semibold text-foreground">Disclosure of Your Personal Data</h2>
 
-            <h3 className="mt-4 text-lg font-semibold text-white">Business Transactions</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">Business Transactions</h3>
             <p className="mt-2">
               If the Company is involved in a merger, acquisition or asset sale, Your Personal
               Data may be transferred. We will provide notice before Your Personal Data is
               transferred and becomes subject to a different Privacy Policy.
             </p>
 
-            <h3 className="mt-4 text-lg font-semibold text-white">Law enforcement</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">Law enforcement</h3>
             <p className="mt-2">
               Under certain circumstances, the Company may be required to disclose Your Personal
               Data if required to do so by law or in response to valid requests by public
               authorities (e.g. a court or a government agency).
             </p>
 
-            <h3 className="mt-4 text-lg font-semibold text-white">Other legal requirements</h3>
+            <h3 className="mt-4 text-lg font-semibold text-foreground">Other legal requirements</h3>
             <p className="mt-2">
               The Company may disclose Your Personal Data in the good faith belief that such
               action is necessary to:
@@ -381,7 +383,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Security of Your Personal Data</h2>
+            <h2 className="text-xl font-semibold text-foreground">Security of Your Personal Data</h2>
             <p className="mt-2">
               The security of Your Personal Data is important to Us, but remember that no method
               of transmission over the Internet, or method of electronic storage is 100% secure.
@@ -391,7 +393,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Children&apos;s Privacy</h2>
+            <h2 className="text-xl font-semibold text-foreground">Children&apos;s Privacy</h2>
             <p className="mt-2">
               Our Service does not address anyone under the age of 13. We do not knowingly collect
               personally identifiable information from anyone under the age of 13. If You are a
@@ -408,7 +410,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Links to Other Websites</h2>
+            <h2 className="text-xl font-semibold text-foreground">Links to Other Websites</h2>
             <p className="mt-2">
               Our Service may contain links to other websites that are not operated by Us. If You
               click on a third party link, You will be directed to that third party&apos;s site.
@@ -421,7 +423,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Changes to this Privacy Policy</h2>
+            <h2 className="text-xl font-semibold text-foreground">Changes to this Privacy Policy</h2>
             <p className="mt-2">
               We may update Our Privacy Policy from time to time. We will notify You of any
               changes by posting the new Privacy Policy on this page.
@@ -438,14 +440,14 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold text-white">Contact Us</h2>
+            <h2 className="text-xl font-semibold text-foreground">Contact Us</h2>
             <p className="mt-2">
               If you have any questions about this Privacy Policy, You can contact us:
             </p>
             <ul className="mt-2 list-disc space-y-1 pl-6">
               <li>
                 By email:{" "}
-                <a href="mailto:noah@nmgsystems.dev" className="underline hover:text-white">
+                <a href="mailto:noah@nmgsystems.dev" className="underline hover:text-foreground">
                   noah@nmgsystems.dev
                 </a>
               </li>
@@ -454,5 +456,7 @@ export default function PrivacyPage() {
         </div>
       </div>
     </main>
+    <Footer />
+    </>
   );
 }
