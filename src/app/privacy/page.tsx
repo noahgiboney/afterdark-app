@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for Afterdark: Haunted Locations",
+  description: "Privacy Policy for Afterdark: Haunted Places",
 };
 
 export default function PrivacyPage() {
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
           &larr; Back home
         </Link>
 
-        <h1 className="mt-6 text-3xl">Privacy Policy for Afterdark: Haunted Locations</h1>
+        <h1 className="mt-6 text-3xl">Privacy Policy for Afterdark: Haunted Places</h1>
         <p className="mt-2 text-sm text-secondary">Last updated: October 16, 2026</p>
 
         <div className="mt-10 space-y-8 text-foreground/80 leading-relaxed">
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
                 election of directors or other managing authority.
               </li>
               <li>
-                <strong>Application</strong> refers to Afterdark: Haunted Locations, the software program
+                <strong>Application</strong> refers to Afterdark: Haunted Places, the software program
                 provided by the Company.
               </li>
               <li>
