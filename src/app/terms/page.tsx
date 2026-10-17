@@ -96,16 +96,16 @@ export default function TermsPage() {
             <Section title="3. Content You Share">
               <p>
                 Afterdark lets you share content that other people can see, including comments on
-                locations, your username, your visits and leaderboard standing, and haunted
-                locations or corrections you submit (&quot;User Content&quot;).
+                places, your username, your visits and leaderboard standing, and haunted
+                places or corrections you submit (&quot;User Content&quot;).
               </p>
               <p>
                 You keep ownership of your User Content. By sharing it, you give us a worldwide,
                 non-exclusive, royalty-free license to host, store, display, reproduce, adapt and
-                distribute it in connection with operating and promoting the Service. For location
+                distribute it in connection with operating and promoting the Service. For place
                 submissions and corrections, this includes editing them for accuracy, clarity and
-                length and publishing them as part of Afterdark&apos;s location listings. This
-                license ends when your content is removed from the Service, except for locations
+                length and publishing them as part of Afterdark&apos;s listings. This
+                license ends when your content is removed from the Service, except for places
                 that have already been published, which may remain on the map.
               </p>
               <p>
@@ -121,18 +121,18 @@ export default function TermsPage() {
                   "Harasses, bullies, threatens, intimidates or targets another person or group.",
                   "Is hateful or discriminatory, or attacks people based on race, ethnicity, national origin, religion, sex, gender identity, sexual orientation, disability, age or any other protected characteristic.",
                   "Is sexually explicit, pornographic or sexually exploits anyone, especially minors.",
-                  "Promotes, glorifies or incites real-world violence, self-harm or suicide. Discussing the history of a location, including tragedies tied to it, is fine. Celebrating harm to real people is not.",
-                  "Mocks, harasses or reveals private information about victims of real tragedies, their families or the current residents or owners of a location.",
+                  "Promotes, glorifies or incites real-world violence, self-harm or suicide. Discussing the history of a place, including tragedies tied to it, is fine. Celebrating harm to real people is not.",
+                  "Mocks, harasses or reveals private information about victims of real tragedies, their families or the current residents or owners of a place.",
                   "Shares someone else's personal information, such as a private home address, phone number or email, without permission.",
                   "Encourages trespassing, vandalism, break-ins or any other illegal activity.",
-                  "Is spam, advertising, a scam, or knowingly false, including made-up locations or fake reports.",
+                  "Is spam, advertising, a scam, or knowingly false, including made-up places or fake reports.",
                   "Impersonates any person or organization, or uses an offensive or misleading username.",
                   "Infringes anyone's copyright, trademark, privacy or other rights.",
                 ]}
               />
               <p>
                 You also agree not to abuse the Service itself. That includes misusing the report
-                feature, scraping or copying location data in bulk, interfering with or overloading
+                feature, scraping or copying place listings in bulk, interfering with or overloading
                 the Service, trying to get around the content filter, blocks or bans, or accessing
                 accounts or data that are not yours.
               </p>
@@ -175,38 +175,38 @@ export default function TermsPage() {
               </p>
             </Section>
 
-            <Section title="6. Visiting Locations Safely and Legally">
+            <Section title="6. Visiting Places Safely and Legally">
               <p>
                 Afterdark is a guide to places with reported paranormal activity. Many of these
                 places are private property, closed to the public, dangerous or in disrepair. A
-                location appearing in Afterdark does not mean it is open to visitors, safe to visit,
+                place appearing in Afterdark does not mean it is open to visitors, safe to visit,
                 or that you have permission to be there.
               </p>
               <Bullets
                 items={[
                   "Do not trespass. Get permission before entering private property and follow posted signs, hours and closures.",
-                  "Obey all local laws, and respect the people who live and work at or near a location.",
+                  "Obey all local laws, and respect the people who live and work at or near a place.",
                   "Be careful. Abandoned buildings, cemeteries, woods and roads at night carry real risks. Visit with others and tell someone where you are going.",
                   "Do not use the app while driving. Plan road trips and check directions before you set off, and follow the rules of the road.",
                 ]}
               />
               <p>
-                You visit any location at your own risk. To the fullest extent permitted by law, we
+                You visit any place at your own risk. To the fullest extent permitted by law, we
                 are not responsible for any injury, loss, damage, arrest, fine or other consequence
-                that results from visiting, or trying to visit, a location you found through
+                that results from visiting, or trying to visit, a place you found through
                 Afterdark.
               </p>
             </Section>
 
             <Section title="7. Entertainment Purposes">
               <p>
-                Location stories, legends and paranormal reports in Afterdark are shared for
+                Stories, legends and paranormal reports in Afterdark are shared for
                 entertainment. They come from folklore, public sources and users, and we do not
                 verify that they are true. Addresses, coordinates, directions, distances and other
                 details may be inaccurate or out of date.
               </p>
               <p>
-                Echoes are retellings of a location&apos;s story, written by Apple&apos;s on-device
+                Echoes are retellings of a place&apos;s story, written by Apple&apos;s on-device
                 AI in styles such as a campfire tale, a lost journal or a case file. Echoes are
                 fiction. They may include invented or inaccurate details and should not be taken as
                 fact.
@@ -237,7 +237,7 @@ export default function TermsPage() {
 
             <Section title="9. Our Content and License to Use the App">
               <p>
-                Afterdark, including its design, location database, text, graphics, icons and
+                Afterdark, including its design, database of places, text, graphics, icons and
                 software, is owned by us or our licensors and protected by intellectual property
                 laws. Subject to these Terms, we grant you a personal, non-exclusive,
                 non-transferable, revocable license to use the app on Apple devices that you own or
@@ -270,7 +270,7 @@ export default function TermsPage() {
                 The Service is provided &quot;as is&quot; and &quot;as available&quot;, without
                 warranties of any kind, express or implied, including warranties of merchantability,
                 fitness for a particular purpose, accuracy and non-infringement. We do not guarantee
-                that the Service will be uninterrupted, error-free or secure, or that any location
+                that the Service will be uninterrupted, error-free or secure, or that any place
                 information is accurate, complete or current.
               </p>
             </Section>
@@ -280,7 +280,7 @@ export default function TermsPage() {
                 To the fullest extent permitted by law, NMG Systems LLC will not be liable for any
                 indirect, incidental, special, consequential or punitive damages, or for any loss of
                 data, profits or goodwill, arising from or related to your use of the Service,
-                visits to any location, or content posted by other users. Our total liability for
+                visits to any place, or content posted by other users. Our total liability for
                 any claim related to the Service is limited to the greater of the amount you paid us
                 in the 12 months before the claim or US $50. Some places do not allow these
                 limitations, so they may not apply to you.
@@ -291,7 +291,7 @@ export default function TermsPage() {
               <p>
                 You agree to defend, indemnify and hold harmless NMG Systems LLC from any claims,
                 damages, losses and expenses, including reasonable legal fees, arising from your
-                User Content, your visits to any location, or your violation of these Terms or any
+                User Content, your visits to any place, or your violation of these Terms or any
                 law.
               </p>
             </Section>

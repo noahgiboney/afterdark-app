@@ -40,14 +40,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         console.log('generateMetadata: No location found for ID:', id); 
       }
       return {
-        title: "Location Not Found",
+        title: "Place Not Found",
       };
     }
 
     if (!location) {
       console.log('generateMetadata: No data returned (null) for ID:', id);
       return {
-        title: "Location Not Found",
+        title: "Place Not Found",
       };
     }
 
@@ -93,7 +93,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   } catch (e) {
     console.error('generateMetadata: Unexpected error:', e); 
     return {
-      title: "Error Loading Location",
+      title: "Error Loading Place",
     };
   }
 }
@@ -110,7 +110,7 @@ export default async function LocationPage({ params }: Props) {
       .single();
 
     if (error || !location) {
-      return <Message text="Location not found" />;
+      return <Message text="Place not found" />;
     }
 
     const descPreview = location.detail.length > 160
@@ -139,7 +139,7 @@ export default async function LocationPage({ params }: Props) {
     );
   } catch (e) {
     console.error('LocationPage: Unexpected error:', e);
-    return <Message text="Error loading location" />;
+    return <Message text="Error loading place" />;
   }
 }
 function Message({ text }: { text: string }) {

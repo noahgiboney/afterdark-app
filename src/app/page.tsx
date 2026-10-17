@@ -20,13 +20,13 @@ const features = [
   {
     eyebrow: "Stories",
     title: "Every haunt has a story.",
-    detail: "Read the legend behind each location, then hear it retold with Echoes as a campfire tale, a lost journal, or a case file.",
+    detail: "Read the legend behind each place, then hear it retold with Echoes as a campfire tale, a lost journal, or a case file.",
     screenshot: "story.jpg",
   },
   {
     eyebrow: "Haunted Notifications",
     title: "Know when you're close.",
-    detail: "Get a heads-up when you're near a haunted location, so you never drive past one again.",
+    detail: "Get a heads-up when you're near a haunted place, so you never drive past one again.",
     screenshot: "notifications.jpg",
   },
   {
@@ -38,7 +38,7 @@ const features = [
   {
     eyebrow: "Community",
     title: "Go there. Leave your mark.",
-    detail: "Log your visits, add new locations, and climb the leaderboard with fellow explorers.",
+    detail: "Log your visits, add new places, and climb the leaderboard with fellow explorers.",
     screenshot: "social.jpg",
   },
 ];
@@ -55,8 +55,8 @@ export default function Home() {
               Every place has a story after dark.
             </p>
             <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-foreground/75 md:mx-0">
-              Find haunted locations near you, hear the legends behind them, and plan a road trip
-              through the restless places.
+              Find haunted places near you, hear the legends behind them, and plan a road trip
+              from one haunt to the next.
             </p>
             <div className="mt-10">
               <AppStoreButton />
