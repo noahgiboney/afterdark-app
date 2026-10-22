@@ -39,7 +39,7 @@ export default function TermsPage() {
           </Link>
 
           <h1 className="mt-6 text-3xl">Terms of Use</h1>
-          <p className="mt-2 text-sm text-secondary">Last updated: October 17, 2026</p>
+          <p className="mt-2 text-sm text-secondary">Last updated: October 22, 2026</p>
 
           <div className="mt-10 space-y-10 leading-relaxed text-foreground/80">
             <section className="space-y-3">
@@ -96,8 +96,14 @@ export default function TermsPage() {
             <Section title="3. Content You Share">
               <p>
                 Afterdark lets you share content that other people can see, including comments on
-                places, your username, your visits and leaderboard standing, and haunted
+                places, your username, your visit count and leaderboard standing, and haunted
                 places or corrections you submit (&quot;User Content&quot;).
+              </p>
+              <p>
+                Your visits are private by default. Other people can see which places you visited,
+                and the day you visited them, only if you turn on Share My Visits in your profile
+                settings, and you can turn it off at any time. Your total number of visits is always
+                shown on your profile and the leaderboard.
               </p>
               <p>
                 You keep ownership of your User Content. By sharing it, you give us a worldwide,

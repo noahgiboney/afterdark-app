@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: APP_FULL_NAME,
   description: APP_TAGLINE,
   icons: {
-    icon: "/favicon_grey.png",
+    icon: "/favicon.svg",
   },
 };
 
